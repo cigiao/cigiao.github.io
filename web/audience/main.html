@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../resources/css/jquery-ui-1.10.4.custom.min.css">
+    <script src="../resources/js/jquery-1.10.2.js"></script>
+    <script src="../resources/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <title>main</title>
+    <link href="../resources/css/default.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page" class="container">
+    <div id="header">
+        <div id="logo">
+            <img src="../userImg/评委.jpeg"/>
+            <h1>观众</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="personal.html">个人信息</a></li>
+                <li class="current_page_item"><a href="main.html">评委信息</a></li>
+                <li><a href="player.html">选手信息</a></li>
+                <li><a onclick="return confirm('确认退出?');" href="../exit">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="top">
+            <h2>选手评分系统</h2>
+            <hr/>
+
+            <div class="find">
+                <form action="" method="post">
+                    <input id="find-text" type="text" name="key" placeholder="输入姓名搜索">
+                    <input class="find-btn" type="submit" value="搜索">
+                </form>
+            </div>
+        </div>
+        <div class="table">
+            <table id="table" width="800" frame="box" align="center">
+                <tr>
+                    <th height="35">姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>履历</th>
+                    <th>工作单位</th>
+                    <th>职位</th>
+                </tr>
+
+                <tr>
+                    <td height="35">评委1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td><a href="">查看</a></td>
+                </tr>
+                <tr>
+                    <td height="35">评委2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td><a href="">查看</a></td>
+                </tr>
+                <tr>
+                    <td height="35">评委3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td><a href="">查看</a></td>
+                </tr>
+                <tr>
+                    <td height="35">评委4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td><a href="">查看</a></td>
+                </tr>
+                <tr>
+                    <td height="35">评委5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td><a href="">查看</a></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .ui-dialog-titlebar-close {
+        display: none
+    }
+</style>
+
+<script>
+    $('#add-dialog').dialog({
+        width: 310,
+        autoOpen: false,
+        draggable: false,
+        modal: true,
+        resizable: false
+    });
+    $('.btn-add').click(function () {
+        $('#add-dialog').dialog('open');
+    });
+</script>
+</body>
+</html>
+
